@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>मेरी प्यारी innu 🥰,</strong>
+                        <p>
+                            Pata hai betuu tum poochti ho na humesha ki sirf main hi kyu to suno hume tumne jaisa samgha
+                            waisa samghne ki koshish hi nahi ki kisi ne, tumne hume jaisa apnaya hai waisa kisi ne nahi
+                            apna paaya, tumne jaisa sath diya waisa kisi ne nahi diya ,tumne jaisa chah hai waise kisi
+                            ne meri galtiyan ko nahi najarandaj kiya,tumhare sath maine sukoon dhoonda ,jo tumse mahsoos
+                            hua bo kisi se nahi hua,tumhare sath jo lamhe beete bo kisi ke sath nahi beete all i want to
+                            be yours only.
+                            I love you meri gudiya😍
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+
+</html>
